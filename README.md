@@ -17,6 +17,30 @@ In your Arduino code, include the sevens library:
 	#include <sevensd.h>
 ```
 
+Com a biblioteca SevenSD você poderá criar dois tipos de objetos, SevenSD e SevenSDchar:
+- SevenSD: Armazenam a quais pinos do arduino o visor de sete segmentos está conectado;
+- SevenSDchar: Armazena um configuração de 0s e 1s que representa um caracter no display de sete-segmentos;
+
+```bash
+	#include <sevensd.h>
+
+	SevenSD *ssd;
+	SevenSD::SevenSDchar *chA;
+
+	void setup(){
+
+		//ssd = new SevenSD(byte pinA, byte pinB, byte pinC, byte pinD, byte pinE, byte pinF, byte pinG, byte pinH);
+		ssd = new SevenSD(2,3,4,5,6,7,8,9);
+
+		//chA = new SevenSD::SevenSDchar(a,b,c,d,e,f,g,h);
+		chA = new SevenSD::SevenSDchar(1,1,1,0,1,1,1,0);
+
+	}
+
+```
+
+
+
 Contribute
 ----------
 
