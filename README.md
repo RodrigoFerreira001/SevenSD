@@ -35,6 +35,33 @@ Com a biblioteca SevenSD você poderá criar dois tipos de objetos, SevenSD e Se
 		//chA = new SevenSD::SevenSDchar(a,b,c,d,e,f,g,h);
 		chA = new SevenSD::SevenSDchar(1,1,1,0,1,1,1,0);
 
+		/*you cal also do
+		SevenSD d7(3,4,2,5,6,7,8,9);
+		SevenSD::SevenSDchar chr(0,0,0,0,0,0,0,1);
+
+		or
+
+		ssd = new SevenSD();
+		ssd->setPinA(2);
+  		ssd->setPinB(3);
+  		ssd->setPinC(4);
+  		ssd->setPinD(5);
+  		ssd->setPinE(6);
+  		ssd->setPinF(7);
+  		ssd->setPinG(8);
+  		ssd->setPinH(9);
+
+  		chA = SevenSD::SevenSDchar();
+  		cha->SetA(0);
+  		cha->SetB(0);
+  		cha->SetC(0);
+  		cha->SetD(0);
+  		cha->SetE(0);
+  		cha->SetF(0);
+  		cha->SetG(0);
+  		cha->SetH(1);
+
+		*/
 	}
 
 ```
