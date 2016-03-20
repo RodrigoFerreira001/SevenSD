@@ -67,9 +67,9 @@ Com a biblioteca SevenSD você poderá criar dois tipos de objetos, SevenSD e Se
 ```
 
 Depois do objeto SevenSD criado você poderá facilmente manipular o visor de sete sgmentos com as seguintes funções:
-	-write(char c): Basta informar o caracter a ser exibido no display (0-9,A,b,C,d,E,F, ,.). Caso seja informado um caractere inválido, o display
+	- write(char c): Basta informar o caracter a ser exibido no display (0-9,A,b,C,d,E,F, ,.). Caso seja informado um caractere inválido, o display
 	exibirá " ".
-	-writeSegments(byte a, byte b, byte c, byte d, byte e, byte f, byte g, byte g): Basta informar quais segmentos ficarão acesos (1) ou apagados (0).
+	- writeSegments(byte a, byte b, byte c, byte d, byte e, byte f, byte g, byte g): Basta informar quais segmentos ficarão acesos (1) ou apagados (0).
 	 ___a___
 	f		b
 	|___g___|
