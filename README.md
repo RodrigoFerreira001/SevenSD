@@ -67,15 +67,14 @@ Com a biblioteca SevenSD você poderá criar dois tipos de objetos, SevenSD e Se
 ```
 
 Depois do objeto SevenSD criado você poderá facilmente manipular o visor de sete sgmentos com as seguintes funções:
-	- write(char c): Basta informar o caracter a ser exibido no display (0-9,A,b,C,d,E,F, ,.). Caso seja informado um caractere inválido, o display
-	exibirá " ".
-	- writeSegments(byte a, byte b, byte c, byte d, byte e, byte f, byte g, byte g): Basta informar quais segmentos ficarão acesos (1) ou apagados (0).
+- write(char c): Basta informar o caracter a ser exibido no display (0-9,A,b,C,d,E,F, ,.). Caso seja informado um caractere inválido, o display exibirá " ".
+- writeSegments(byte a, byte b, byte c, byte d, byte e, byte f, byte g, byte g): Basta informar quais segmentos ficarão acesos (1) ou apagados (0).
 	 ___a___
 	f		b
 	|___g___|
 	e		c
 	|___d___|(h)
-	-writeSegments(SevenSD::SevenSDchar c): caso queira exibir um caractere personalizado já preenchido, basta fornecê-lo.
+- writeSegments(SevenSD::SevenSDchar c): caso queira exibir um caractere personalizado já preenchido, basta fornecê-lo.
 
 Para verificar a quais portas cada segmento está conectado utilize a função getPin:
 `Serial.pritln(ssd->getPinA(),DEC);
