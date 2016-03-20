@@ -7,7 +7,7 @@ Installation
 ------------
 
 Download this archive and extract its contents in the Arduino libraries folder ( "../Arduino/libraries/").
-If extracted correctly, the libraries folder should contain a folder called sevensd with the files sevensd.h, and sevensd.cpp keywords.txt.
+If extracted correctly, the libraries folder should contain a folder called sevensd with the files sevensd.h,sevensd.cpp and keywords.txt.
 
 Usage
 -----
