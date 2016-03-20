@@ -21,7 +21,7 @@ Com a biblioteca SevenSD você poderá criar dois tipos de objetos, SevenSD e Se
 - SevenSD: Armazenam a quais pinos do arduino o visor de sete segmentos está conectado;
 - SevenSDchar: Armazena um configuração de 0s e 1s que representa um caracter no display de sete-segmentos;
 
-```bash
+```cpp
 	#include <sevensd.h>
 
 	SevenSD *ssd;
@@ -69,11 +69,11 @@ Com a biblioteca SevenSD você poderá criar dois tipos de objetos, SevenSD e Se
 Depois do objeto SevenSD criado você poderá facilmente manipular o visor de sete sgmentos com as seguintes funções:
 - write(char c): Basta informar o caracter a ser exibido no display (0-9,A,b,C,d,E,F, ,.). Caso seja informado um caractere inválido, o display exibirá " ".
 - writeSegments(byte a, byte b, byte c, byte d, byte e, byte f, byte g, byte h): Basta informar quais segmentos ficarão acesos (1) ou apagados (0).
-`	 ___a___
-`	f		b
-`	|___g___|
-`	e		c
-`	|___d___|(h)
+`	 \_\_\_a\_\_\_
+	f		b
+	|\_\_\_g\_\_\_|
+	e		c
+	|\_\_\_d\_\_\_|\(h\)
 `	
 - writeSegments(SevenSD::SevenSDchar c): caso queira exibir um caractere personalizado já preenchido, basta fornecê-lo.
 
